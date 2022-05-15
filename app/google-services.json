@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "31746769586",
+    "project_id": "myapplogin-26c97",
+    "storage_bucket": "myapplogin-26c97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31746769586:android:459e6ad82badf150ff7fab",
+        "android_client_info": {
+          "package_name": "filho.egito.myapplogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31746769586-mcr1j6rqjr39vfmplch1qea9quq6du73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs9W9E8KbkrP-WjWDd9fufr6Mtonj9iMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31746769586-mcr1j6rqjr39vfmplch1qea9quq6du73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
