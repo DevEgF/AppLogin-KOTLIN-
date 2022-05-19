@@ -33,7 +33,7 @@ class SingUpActivity : AppCompatActivity() {
                         if (it.isSuccessful) {
                             val intent = Intent(this, SingInActivity::class.java)
                             startActivity(intent)
-                        } else {
+                            } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }

@@ -3,5 +3,7 @@
     <string name="email">E-mail</string>
     <string name="senha">Senha</string>
     <string name="Login">LOGIN</string>
+    <string name="texthello">Olá :)</string>
+    <string name="Logout">LOGOUT</string>
 
 </resources>
