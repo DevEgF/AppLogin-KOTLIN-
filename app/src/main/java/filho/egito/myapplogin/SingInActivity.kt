@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 import filho.egito.myapplogin.databinding.ActivitySingInBinding
-import filho.egito.myapplogin.databinding.ActivitySingUpBinding
+
 
 class SingInActivity : AppCompatActivity() {
 
@@ -20,6 +19,7 @@ class SingInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
+
         binding.textView.setOnClickListener{
             val intent = Intent(this, SingUpActivity::class.java)
             startActivity(intent)
@@ -31,23 +31,19 @@ class SingInActivity : AppCompatActivity() {
 
                 firebaseAuth.signInWithEmailAndPassword(email, senha).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
+                        val Hello = Intent(this, Hello::class.java )
+                        startActivity(Hello)
                     } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-
+                        Toast.makeText(this, "Senha incorreta!!!", Toast.LENGTH_SHORT).show()
                     }
                 }
             } else {
                 Toast.makeText(this, "Campos vazios não são permitidos !!!", Toast.LENGTH_SHORT).show()
-
             }
-        }
+                   }
     }
-
     override fun onStart() {
         super.onStart()
-
         if(firebaseAuth.currentUser != null){
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

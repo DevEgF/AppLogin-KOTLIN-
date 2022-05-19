@@ -33,8 +33,8 @@ class SingUpActivity : AppCompatActivity() {
                         if (it.isSuccessful) {
                             val intent = Intent(this, SingInActivity::class.java)
                             startActivity(intent)
-                        } else {
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                            } else {
+                            Toast.makeText(this, "Usuário não cadastrado", Toast.LENGTH_SHORT).show()
 
                         }
                     }
